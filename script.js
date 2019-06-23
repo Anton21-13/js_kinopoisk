@@ -15,7 +15,7 @@ function requestApi(method, url) {
   request.send();
 
   request.addEventListener('readystatechange', () => {
-    if (request.readyState !== 4) 
+    if (request.readyState !== 4) return;
   });
 
 
